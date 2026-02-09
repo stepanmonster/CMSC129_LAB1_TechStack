@@ -1,0 +1,50 @@
+# --- Dependencies ---
+# Ignore all node_modules in root, client, and server folders
+node_modules/
+**/node_modules/
+
+# --- Environment & Secrets ---
+# Never commit your MongoDB URI or API keys
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Frontend (React/Vite/CRA) ---
+# Build artifacts
+dist/
+build/
+# React-specific logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# --- Backend (Node/Express) ---
+# Logs and runtime files
+logs
+*.log
+pids
+*.pid
+*.seed
+*.lock
+
+# --- Database (MongoDB) ---
+# Local MongoDB data (if running locally via mongo command)
+data/db/
+*.db
+
+# --- Testing & Coverage ---
+coverage/
+.nyc_output/
+
+# --- IDE & System ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
